@@ -1,0 +1,87 @@
+@font-face {
+  font-family: AquilineTwo;
+  src: url('AquilineTwo.ttf');
+}
+
+@font-face {
+  font-family: 'Duplexide';
+  src: font-url('Duplexide.ttf');
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Duplexide';
+}
+
+.form-field {
+  width: 300px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+
+}
+#form-head {
+  margin-left: 27px;
+}
+.round-corners {
+  border-radius: 10px;
+}
+.main {
+  margin-top: 25px;
+  background: black;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.thumbnail {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  height: 156px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.photo-head {
+text-align: center;
+}
+.photo-wrapper {
+  margin: 25px;
+  margin-top: 50px;
+}
+.button-wrapper {
+  margin: auto;
+  text-align: center;
+}
+
+.button-wrapper a:first-child {
+  margin-right: 25px;
+}
+
+.button-wrapper a:last-child {
+  margin-left: 25px;
+}
+
+@media only screen and (min-width: 48em) {
+  h1 {
+    font-size: 3.75em;
+  }
+
+}
+#main-header {
+  text-align: center;
+}
+body {
+  background: black;
+}

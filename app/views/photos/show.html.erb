@@ -1,8 +1,17 @@
-<h1><%= @photo.title %></h1>
-<h3><%= @photo.author %></h3>
-<br>
-<img src='<%= @photo.url %>'>
-<br>
-<%= link_to "Album", photos_path %>
-<%= link_to "Delete", @photo, method: :delete %>
-<%= link_to "Edit", edit_photo_path %>
+<div class="large-12 large-centered columns show-main">
+
+  <div class='large-6 large-centered columns'>
+    <h1 class='photo-head'><%= @photo.title %></h1>
+    <h3 class='photo-head'>Author: <%= @photo.author %></h3>
+  </div>
+
+  <div class='photo-wrapper'>
+    <img src='<%= @photo.url %>'>
+  </div>
+
+  <div class='large-9 large-centered columns button-wrapper'>
+    <%= link_to "Delete", @photo, method: :delete, :class => 'button round-corners' %>    
+    <%= link_to "Return to Album", photos_path, :class => 'button round-corners' %>
+    <%= link_to "Edit", edit_photo_path, :class => 'button round-corners' %>
+  </div>
+</div>

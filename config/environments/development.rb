@@ -26,4 +26,12 @@ Photogur::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+    #Add the fonts path
+  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
+  #precompile additional assets
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf|otf)$/
+
+  config.assets.precompile += %w( lettering-0.6.1.min.js )
 end

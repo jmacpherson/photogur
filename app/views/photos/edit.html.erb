@@ -1,14 +1,22 @@
-<h1>Edit Photo</h1>
+<div class="large-4 large-centered columns " >
 
-<%= form_for @photo do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <br>
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-  <br>
-  <%= f.label :url %>
-  <%= f.text_field :url %>
-  <br>
-  <%= f.submit %>
-<% end %>
+<h1 id="form-head">Edit photo</h1>
+
+    <div class="form-field">
+      <%= form_for @photo do |f| %>
+        <%= f.label :title %>
+        <%= f.text_field :title, :class => 'round-corners' %>
+        <br>
+        <%= f.label :author %>
+        <%= f.text_field :author, :class => 'round-corners' %>
+        <br>
+        <%= f.label :url %>
+        <%= f.text_field :url, :class => 'round-corners' %>
+        <br>
+        <%= f.submit 'Edit photo', :class => 'button large-centered columns round-corners' %>
+      <% end %>
+    </div>
+    <br>
+    <%= link_to "Return to Album", photos_path %>
+
+</div>

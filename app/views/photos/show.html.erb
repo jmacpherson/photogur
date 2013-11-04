@@ -1,0 +1,8 @@
+<h1><%= @photo.title %></h1>
+<h3><%= @photo.author %></h3>
+<br>
+<img src='<%= @photo.url %>'>
+<br>
+<%= link_to "Album", photos_path %>
+<%= link_to "Delete", @photo, method: :delete %>
+<%= link_to "Edit", edit_photo_path %>

@@ -1,0 +1,9 @@
+<h1>Album</h1>
+
+<%= link_to "New", new_photo_path %>
+
+<ul>
+  <%@photos.each do |photo| %>
+  <li><a href="<%= photo_path(photo)%>"><img src='<%= photo.url %>'></a></li>
+  <% end %>
+</ul>
